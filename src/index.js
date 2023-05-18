@@ -7,6 +7,7 @@ import {
     generateColorsModule,
     generateTheme,
     generateTokens,
+    generateTypographyModule,
     generateUtilities,
     writeStyleSheet
 } from "./generators/index.js";
@@ -36,17 +37,19 @@ const theme = themeFromSourceColor(
     ]
 );
 
-const tokensCss = generateTokens(theme, palettePrefix, colorPrefix, customColorPrefix, sourcePrefix);
+const tokensCss = generateTokens(theme, palettePrefix, colorPrefix, customColorPrefix, sourcePrefix, utilitiesPrefix);
 const themeLightCss = generateTheme(theme, 'light', colorPrefix, customColorPrefix);
 const themeDarkCss = generateTheme(theme, 'dark', colorPrefix, customColorPrefix);
 const utilitiesCss = generateUtilities(theme, utilitiesPrefix, colorPrefix);
 const colorsModuleCss = generateColorsModule(theme, classPrefix, colorPrefix, customColorPrefix);
+const typographyModuleCss = generateTypographyModule(theme, classPrefix, utilitiesPrefix);
 
 writeStyleSheet('tokens.css', tokensCss, `${outDir}/md3/specs`);
 writeStyleSheet('theme.light.css', themeLightCss, `${outDir}/md3/specs`);
 writeStyleSheet('theme.dark.css', themeDarkCss, `${outDir}/md3/specs`);
 writeStyleSheet('utilities.css', utilitiesCss, `${outDir}/md3/specs`);
 writeStyleSheet('colors.module.css', colorsModuleCss, `${outDir}/md3/specs`);
+writeStyleSheet('typography.module.css', typographyModuleCss, `${outDir}/md3/specs`);
 
 // Write barrel export for specification files
 writeStyleSheet('specs.css',
@@ -54,7 +57,8 @@ writeStyleSheet('specs.css',
     '@import url("theme.light.css");\n' +
     '@import url("theme.dark.css");\n' +
     '@import url("utilities.css");\n' +
-    '@import url("colors.module.css");\n',
+    '@import url("colors.module.css");\n' +
+    '@import url("typography.module.css");\n',
     `${outDir}/md3/specs`);
 
 // Write barrel export for Ionic MD3

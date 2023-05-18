@@ -22,16 +22,27 @@ export const generateTypescale = (
     fontSize = '1rem',
     lineHeight = '1.25rem',
     letterSpacing = '0'
-) => {
-    return [
-        `${name}-font-family-name: ${fontFamilyName};`,
-        `${name}-font-family-style: ${fontFamilyStyle};`,
-        `${name}-font-weight: ${fontWeight};`,
-        `${name}-font-size: ${fontSize};`,
-        `${name}-line-height: ${lineHeight};`,
-        `${name}-letter-spacing: ${letterSpacing};`,
-    ];
-}
+) => [
+    `${name}-font-family-name: ${fontFamilyName};`,
+    `${name}-font-family-style: ${fontFamilyStyle};`,
+    `${name}-font-weight: ${fontWeight};`,
+    `${name}-font-size: ${fontSize};`,
+    `${name}-line-height: ${lineHeight};`,
+    `${name}-letter-spacing: ${letterSpacing};`,
+    `${name}: ${fontFamilyStyle} ${fontWeight} ${fontSize}/${lineHeight} ${fontFamilyName};`
+];
+
+export const generateTypescaleCssClass = (
+    className,
+    typescalePrefix,
+) => `.${className} {\n` + [
+    `font-family: var(${typescalePrefix}-font-family-name);`,
+    `font-style: var(${typescalePrefix}-font-family-style);`,
+    `font-weight: var(${typescalePrefix}-font-weight);`,
+    `font-size: var(${typescalePrefix}-font-size);`,
+    `line-height: var(${typescalePrefix}-line-height);`,
+    `letter-spacing: var(${typescalePrefix}-letter-spacing);`
+].map((curr) => '  ' + curr).join('\n') + '\n}\n';
 
 export const writeStyleSheet = (fileName, fileContent, outDir = './out') => {
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, {recursive: true});

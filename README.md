@@ -44,7 +44,7 @@ npm install
 Afterwards, just run the `src/index.js` file as node process:
 
 ```bash
-node src/index.js --output="./out" --color=#ff0000
+node . --output="./out" --color=#ff0000
 ```
 
 The generator will derive primary, secondary, tertiary, a neutral, a neutral variant and an error color from the color
@@ -54,7 +54,7 @@ you specified with `--color=<hex>`.
 
 In order for your Ionic application to recognize your generated MD3 styles and Ionic overwrites, you have to copy the
 newly created `md3/` folder (a sub-directory of your `--output` directory) into your Ionic project into `src/theme`.
-Afterwards, add the following line of CSS code to your `global.scss` file:
+Afterwards, add the following line of CSS code at the bottom of your `global.scss` file:
 
 ```CSS
 @import "theme/md3/theme.css";
@@ -62,7 +62,7 @@ Afterwards, add the following line of CSS code to your `global.scss` file:
 
 And that's it, you can now extend the existing theme files and enjoy your MD3.
 
-### Add Roboto Font (optional)
+### Add Roboto Font (recommended)
 
 If you would like to use the Roboto font as well, you have to include the following lines in your `index.html` file.
 
