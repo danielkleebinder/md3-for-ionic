@@ -1,0 +1,10 @@
+/* Body: https://m3.material.io/styles/color/the-color-system/color-roles */
+body {
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+}
+
+ion-content {
+    --background: var(--md-sys-color-surface);
+    --color: var(--md-sys-color-on-surface);
+}

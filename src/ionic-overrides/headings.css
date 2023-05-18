@@ -1,0 +1,27 @@
+/* Headings */
+h1 {
+    font-family: var(--md-sys-typescale-display-large-font-family-name);
+    font-style: var(--md-sys-typescale-display-large-font-family-style);
+    font-weight: var(--md-sys-typescale-display-large-font-weight);
+    font-size: var(--md-sys-typescale-display-large-font-size);
+    line-height: var(--md-sys-typescale-display-large-line-height);
+    letter-spacing: var(--md-sys-typescale-display-large-letter-spacing);
+}
+
+h2 {
+    font-family: var(--md-sys-typescale-display-medium-font-family-name);
+    font-style: var(--md-sys-typescale-display-medium-font-family-style);
+    font-weight: var(--md-sys-typescale-display-medium-font-weight);
+    font-size: var(--md-sys-typescale-display-medium-font-size);
+    line-height: var(--md-sys-typescale-display-medium-line-height);
+    letter-spacing: var(--md-sys-typescale-display-medium-letter-spacing);
+}
+
+h3 {
+    font-family: var(--md-sys-typescale-display-small-font-family-name);
+    font-style: var(--md-sys-typescale-display-small-font-family-style);
+    font-weight: var(--md-sys-typescale-display-small-font-weight);
+    font-size: var(--md-sys-typescale-display-small-font-size);
+    line-height: var(--md-sys-typescale-display-small-line-height);
+    letter-spacing: var(--md-sys-typescale-display-small-letter-spacing);
+}

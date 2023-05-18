@@ -1,0 +1,57 @@
+/* Cards: https://m3.material.io/components/cards/specs */
+ion-card,
+ion-card.md-elevated {
+    --background: var(--md-sys-color-surface-container-low);
+    --color: var(--md-sys-color-on-surface);
+    box-shadow: var(--md-sys-elevation-1);
+    border-radius: 12px;
+}
+
+ion-card.md-filled {
+    --background: var(--md-sys-color-surface-container-highest);
+    box-shadow: var(--md-sys-elevation-0);
+}
+
+ion-card.md-outlined {
+    --background: var(--md-sys-color-surface);
+    box-shadow: var(--md-sys-elevation-0);
+    outline: 1px solid var(--md-sys-color-outline);
+}
+
+ion-card ion-card-title,
+ion-card ion-card-subtitle {
+    --color: var(--md-sys-color-on-surface);
+}
+
+ion-card img {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+ion-card ion-card-title {
+    font-family: var(--md-sys-typescale-headline-small-font-family-name);
+    font-style: var(--md-sys-typescale-headline-small-font-family-style);
+    font-weight: var(--md-sys-typescale-headline-small-font-weight);
+    font-size: var(--md-sys-typescale-headline-small-font-size);
+    line-height: var(--md-sys-typescale-headline-small-line-height);
+    letter-spacing: var(--md-sys-typescale-headline-small-letter-spacing);
+}
+
+ion-card ion-card-subtitle {
+    margin-top: 0;
+    font-family: var(--md-sys-typescale-label-large-font-family-name);
+    font-style: var(--md-sys-typescale-label-large-font-family-style);
+    font-weight: var(--md-sys-typescale-label-large-font-weight);
+    font-size: var(--md-sys-typescale-label-large-font-size);
+    line-height: var(--md-sys-typescale-label-large-line-height);
+    letter-spacing: var(--md-sys-typescale-label-large-letter-spacing);
+}
+
+ion-card-content {
+    font-family: var(--md-sys-typescale-body-medium-font-family-name);
+    font-style: var(--md-sys-typescale-body-medium-font-family-style);
+    font-weight: var(--md-sys-typescale-body-medium-font-weight);
+    font-size: var(--md-sys-typescale-body-medium-font-size);
+    line-height: var(--md-sys-typescale-body-medium-line-height);
+    letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
+}

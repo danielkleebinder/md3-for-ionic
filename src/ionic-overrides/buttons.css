@@ -1,0 +1,115 @@
+/* Buttons: https://m3.material.io/components/buttons/specs */
+ion-button,
+ion-button.md-elevated {
+    --background: var(--md-sys-color-surface-container-low);
+    --background-hover: var(--md-sys-color-surface-container);
+    --background-focused: var(--md-sys-color-surface-container);
+    --background-activated: var(--md-sys-color-surface-container);
+
+    --color: var(--md-sys-color-primary);
+    --color-hover: var(--md-sys-color-primary);
+    --color-focused: var(--md-sys-color-primary);
+    --color-activated: var(--md-sys-color-primary);
+
+    --box-shadow: var(--md-sys-elevation-1);
+    --border-radius: 20px;
+    --ripple-color: var(--md-sys-color-surface-container-highest);
+
+    --padding-start: 24px;
+    --padding-end: 24px;
+
+    font-family: var(--md-sys-typescale-label-large-font-family-name);
+    font-style: var(--md-sys-typescale-label-large-font-family-style);
+    font-weight: var(--md-sys-typescale-label-large-font-weight);
+    font-size: var(--md-sys-typescale-label-large-font-size);
+    line-height: var(--md-sys-typescale-label-large-line-height);
+    letter-spacing: var(--md-sys-typescale-label-large-letter-spacing);
+
+    height: 40px;
+    text-transform: none;
+}
+
+ion-button:hover,
+ion-button.md-elevated:hover {
+    --box-shadow: var(--md-sys-elevation-2);
+}
+
+ion-button ion-icon,
+ion-button.md-elevated ion-icon {
+    font-size: 18px;
+    color: var(--md-sys-color-primary);
+}
+
+ion-button:has(ion-icon[slot=start]) {
+    --padding-start: 16px;
+}
+
+ion-button:has(ion-icon[slot=end]) {
+    --padding-end: 16px;
+}
+
+ion-button ion-icon[slot=start] {
+    margin: 0 8px 0 0;
+}
+
+ion-button ion-icon[slot=end] {
+    margin: 0 0 0 8px;
+}
+
+ion-button.md-filled {
+    --background: var(--md-sys-color-primary);
+    --background-hover: var(--md-sys-color-primary);
+    --background-focused: var(--md-sys-color-primary);
+    --background-activated: var(--md-sys-color-primary);
+
+    --color: var(--md-sys-color-on-primary);
+    --color-hover: var(--md-sys-color-on-primary);
+    --color-focused: var(--md-sys-color-on-primary);
+    --color-activated: var(--md-sys-color-on-primary);
+
+    --box-shadow: var(--md-sys-elevation-0);
+}
+
+ion-button.md-filled ion-icon {
+    color: var(--md-sys-color-on-primary);
+}
+
+ion-button.md-filled-tonal {
+    --background: var(--md-sys-color-secondary-container);
+    --background-hover: var(--md-sys-color-secondary-container);
+    --background-focused: var(--md-sys-color-secondary-container);
+    --background-activated: var(--md-sys-color-secondary-container);
+
+    --color: var(--md-sys-color-on-secondary-container);
+    --color-hover: var(--md-sys-color-on-secondary-container);
+    --color-focused: var(--md-sys-color-on-secondary-container);
+    --color-activated: var(--md-sys-color-on-secondary-container);
+
+    --box-shadow: var(--md-sys-elevation-0);
+}
+
+ion-button.md-filled-tonal ion-icon {
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+ion-button.md-outlined {
+    --background: var(--md-sys-color-surface);
+    --background-hover: var(--md-sys-color-surface);
+    --background-focused: var(--md-sys-color-surface);
+    --background-activated: var(--md-sys-color-surface);
+
+    --box-shadow: var(--md-sys-elevation-0);
+
+    --border-color: var(--md-sys-color-outline);
+    --border-style: solid;
+    --border-width: 1px;
+}
+
+ion-button.md-text {
+    --background: transparent;
+    --background-hover: transparent;
+    --background-focused: transparent;
+    --background-activated: transparent;
+
+    --box-shadow: var(--md-sys-elevation-0);
+}
