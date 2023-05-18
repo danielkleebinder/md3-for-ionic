@@ -7,23 +7,42 @@ similar to the [MD3 theme builder](https://m3.material.io/theme-builder), and cr
 __Note__: If you are not relying on the Ionic Framework, you are probably better off using
 the [MD3 theme builder](https://m3.material.io/theme-builder).
 
-## Installation
+[comment]: <> (## Installation)
+
+[comment]: <> (```bash)
+[comment]: <> (npm i @dk/md3-for-ionic --save-dev)
+[comment]: <> (```)
+
+[comment]: <> (### Generate Ionic Overrides)
+
+[comment]: <> (```bash)
+[comment]: <> (node node_modules/@dk/md3-for-ionic/index.js --color=#00ff00)
+[comment]: <> (```)
+
+[comment]: <> (or by using NPX:)
+
+[comment]: <> (```bash)
+[comment]: <> (npx @dk/md3-for-ionic --color=#00ff00)
+[comment]: <> (```)
+
+### Run locally
+
+You can run the code in this repository locally by cloning the repository and running `npm install`:
 
 ```bash
-npm i @dk/md3-for-ionic --save-dev
+git clone https://github.com/danielkleebinder/md3-for-ionic.git
+cd md3-for-ionic
+npm install
 ```
 
-### Generate Ionic Overrides
+Afterwards, just run the `src/index.js` file as node process:
 
 ```bash
-node node_modules/@dk/md3-for-ionic/index.js --color=#00ff00
+node src/index.js --output="./out" --color=#ff0000
 ```
 
-or by using NPX:
-
-```bash
-npx @dk/md3-for-ionic --color=#00ff00
-```
+The generator will derive primary, secondary, tertiary, a neutral, a neutral variant and an error color from the color
+you specified with `--color=<hex>`.
 
 ### Add Roboto Font
 
@@ -36,3 +55,10 @@ If you would like to use the Roboto font as well, you have to include the follow
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 ```
+
+## Contribute
+
+This project is only supposed to be a helper to bridge the time between the release of
+the [Material Design 3 (MD3) Guidelines](https://m3.material.io/) and the point in time when
+the [Ionic Framework](https://ionic.io/) eventually supports MD3. In order to make this project work, __feel free to
+contribute__ by [opening a pull request](https://github.com/danielkleebinder/md3-for-ionic/pulls).
