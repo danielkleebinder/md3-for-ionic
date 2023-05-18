@@ -10,19 +10,25 @@ the [MD3 theme builder](https://m3.material.io/theme-builder).
 [comment]: <> (## Installation)
 
 [comment]: <> (```bash)
+
 [comment]: <> (npm i @dk/md3-for-ionic --save-dev)
+
 [comment]: <> (```)
 
 [comment]: <> (### Generate Ionic Overrides)
 
 [comment]: <> (```bash)
+
 [comment]: <> (node node_modules/@dk/md3-for-ionic/index.js --color=#00ff00)
+
 [comment]: <> (```)
 
 [comment]: <> (or by using NPX:)
 
 [comment]: <> (```bash)
+
 [comment]: <> (npx @dk/md3-for-ionic --color=#00ff00)
+
 [comment]: <> (```)
 
 ### Run locally
@@ -44,7 +50,19 @@ node src/index.js --output="./out" --color=#ff0000
 The generator will derive primary, secondary, tertiary, a neutral, a neutral variant and an error color from the color
 you specified with `--color=<hex>`.
 
-### Add Roboto Font
+### Add Overwrites
+
+In order for your Ionic application to recognize your generated MD3 styles and Ionic overwrites, you have to copy the
+newly created `md3/` folder (a sub-directory of your `--output` directory) into your Ionic project into `src/theme`.
+Afterwards, add the following line of CSS code to your `global.scss` file:
+
+```CSS
+@import "theme/md3/theme.css";
+```
+
+And that's it, you can now extend the existing theme files and enjoy your MD3.
+
+### Add Roboto Font (optional)
 
 If you would like to use the Roboto font as well, you have to include the following lines in your `index.html` file.
 
@@ -62,3 +80,8 @@ This project is only supposed to be a helper to bridge the time between the rele
 the [Material Design 3 (MD3) Guidelines](https://m3.material.io/) and the point in time when
 the [Ionic Framework](https://ionic.io/) eventually supports MD3. In order to make this project work, __feel free to
 contribute__ by [opening a pull request](https://github.com/danielkleebinder/md3-for-ionic/pulls).
+
+In order to test your contributions, I would recommend creating a new Ionic application to apply your styles. Each
+component has it's own css file in the directory `md3/ionic/` and strictly follows
+the [MD3 component specs](https://m3.material.io/components). Extend those or create new component style files if
+necessary :-)
