@@ -1,4 +1,4 @@
-/* Buttons: https://m3.material.io/components/buttons/specs */
+/* Common Buttons: https://m3.material.io/components/buttons/specs */
 ion-button,
 ion-button.md-filled,
 ion-button[fill=solid] {
@@ -126,4 +126,79 @@ ion-button[fill=clear] {
   --color-activated: var(--md-sys-color-primary);
 
   --box-shadow: var(--md-sys-elevation-0);
+}
+
+/* Floating Action Buttons (FAB): https://m3.material.io/components/floating-action-button/overview */
+ion-fab-button {
+  --background: var(--md-sys-color-primary-container);
+  --color: var(--md-sys-color-on-primary-container);
+
+  --box-shadow: var(--md-sys-elevation-3);
+  --border-radius: 16px;
+
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+
+  margin: 16px;
+
+  width: 56px;
+  height: 56px;
+}
+
+ion-fab-button ion-icon {
+  font-size: 24px;
+}
+
+ion-fab-button.md-small,
+ion-fab-button[size=small] {
+  --border-radius: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+ion-fab-button.md-large,
+ion-fab-button[size=large] {
+  --border-radius: 28px;
+  width: 96px;
+  height: 96px;
+}
+
+ion-fab-button.md-large ion-icon,
+ion-fab-button[size=large] ion-icon {
+  font-size: 36px;
+}
+
+ion-fab-button:hover {
+  --box-shadow: var(--md-sys-elevation-4);
+}
+
+ion-fab-button.md-lowered {
+  --box-shadow: var(--md-sys-elevation-1);
+}
+
+ion-fab-button.md-lowered:hover {
+  --box-shadow: var(--md-sys-elevation-2);
+}
+
+ion-fab-button.md-surface {
+  --background: var(--md-sys-color-surface-container-high);
+  --color: var(--md-sys-color-primary);
+}
+
+ion-fab-button.md-lowered.md-surface {
+  --background: var(--md-sys-color-surface-container-low);
+}
+
+ion-fab-button.md-secondary,
+ion-fab-button[color=secondary] {
+  --background: var(--md-sys-color-secondary-container);
+  --color: var(--md-sys-color-on-secondary-container);
+}
+
+ion-fab-button.md-tertiary,
+ion-fab-button[color=tertiary] {
+  --background: var(--md-sys-color-tertiary-container);
+  --color: var(--md-sys-color-on-tertiary-container);
 }
