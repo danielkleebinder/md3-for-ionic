@@ -60,10 +60,10 @@ writeStyleSheet('specs.css',
 // Write barrel export for Ionic MD3
 writeStyleSheet('theme.css',
     '@import url("specs/specs.css");\n' +
-    '@import url("ionic-overrides/ionic-overrides.css");\n'
+    '@import url("ionic/ionic.css");\n'
     , `${outDir}/md3`)
 
-fs.copy('./src/ionic-overrides', `${outDir}/md3/ionic-overrides`, {overwrite: true});
+fs.copy('./src/ionic', `${outDir}/md3/ionic`, {overwrite: true});
 console.log('Ionic overrides created');
 
 console.log();
