@@ -116,7 +116,7 @@ export const generateTheme = (
         cssThemes.push(`${customColorPrefix}-on-${customColor.color.name}-container-rgb: var(${customColorPrefix}-on-${customColor.color.name}-container-${themeType}-rgb);`);
     });
 
-    let bodyCss = 'body';
+    let bodyCss = 'body,\nbody.light';
     if (themeType === 'dark') bodyCss = 'body.dark';
     return `${bodyCss} {\n${cssThemes.map((curr) => '  ' + curr).join('\n')}\n}\n`;
 };

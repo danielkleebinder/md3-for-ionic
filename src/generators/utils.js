@@ -18,7 +18,7 @@ export const generateTypescale = (
     name,
     fontFamilyName = 'Roboto',
     fontFamilyStyle = 'Regular',
-    fontWeight = '400px',
+    fontWeight = '400',
     fontSize = '1rem',
     lineHeight = '1.25rem',
     letterSpacing = '0'
@@ -29,7 +29,7 @@ export const generateTypescale = (
     `${name}-font-size: ${fontSize};`,
     `${name}-line-height: ${lineHeight};`,
     `${name}-letter-spacing: ${letterSpacing};`,
-    `${name}: ${fontFamilyStyle} ${fontWeight} ${fontSize}/${lineHeight} ${fontFamilyName};`
+    `${name}: normal ${fontWeight} ${fontSize}/${lineHeight} ${fontFamilyName};`
 ];
 
 export const generateTypescaleCssClass = (

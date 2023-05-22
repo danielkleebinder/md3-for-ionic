@@ -300,63 +300,63 @@ export const generateTokens = (
 
     cssTokens.push('');
     cssTokens.push('/* Display - Large */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-large`, 'Roboto', 'Regular', '400px', '3.5625rem', '4rem', '-0.015625rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-large`, 'Roboto', 'Regular', '400', '3.5625rem', '4rem', '-0.015625rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Display - Medium */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-medium`, 'Roboto', 'Regular', '400px', '2.8125rem', '3.25rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-medium`, 'Roboto', 'Regular', '400', '2.8125rem', '3.25rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Display - Small */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-small`, 'Roboto', 'Regular', '400px', '2.25rem', '2.75rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-display-small`, 'Roboto', 'Regular', '400', '2.25rem', '2.75rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Headline - Large */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-large`, 'Roboto', 'Regular', '400px', '2rem', '2.5rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-large`, 'Roboto', 'Regular', '400', '2rem', '2.5rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Headline - Medium */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-medium`, 'Roboto', 'Regular', '400px', '1.75rem', '2.25rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-medium`, 'Roboto', 'Regular', '400', '1.75rem', '2.25rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Headline - Small */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-small`, 'Roboto', 'Regular', '400px', '1.5rem', '2rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-headline-small`, 'Roboto', 'Regular', '400', '1.5rem', '2rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Body - Large */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-large`, 'Roboto', 'Regular', '400px', '1rem', '1.5rem', '0.03125rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-large`, 'Roboto', 'Regular', '400', '1rem', '1.5rem', '0.03125rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Body - Medium */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-medium`, 'Roboto', 'Regular', '400px', '0.875rem', '1.25rem', '0.015625rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-medium`, 'Roboto', 'Regular', '400', '0.875rem', '1.25rem', '0.015625rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Body - Small */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-small`, 'Roboto', 'Regular', '400px', '0.75rem', '1rem', '0.025rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-body-small`, 'Roboto', 'Regular', '400', '0.75rem', '1rem', '0.025rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Label - Large */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-large`, 'Roboto', 'Medium', '500px', '0.875rem', '1.25rem', '0.00625rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-large`, 'Roboto', 'Medium', '500', '0.875rem', '1.25rem', '0.00625rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Label - Medium */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-medium`, 'Roboto', 'Medium', '500px', '0.75rem', '1rem', '0.03125rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-medium`, 'Roboto', 'Medium', '500', '0.75rem', '1rem', '0.03125rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Label - Small */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-small`, 'Roboto', 'Medium', '500px', '0.6875rem', '1rem', '0.03125rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-label-small`, 'Roboto', 'Medium', '500', '0.6875rem', '1rem', '0.03125rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Title - Large */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-large`, 'Roboto', 'Regular', '400px', '1.375rem', '1.75rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-large`, 'Roboto', 'Regular', '400', '1.375rem', '1.75rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Title - Medium */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-medium`, 'Roboto', 'Medium', '500px', '1rem', '1.5rem', '0.009375rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-medium`, 'Roboto', 'Medium', '500', '1rem', '1.5rem', '0.009375rem'));
 
     cssTokens.push('');
     cssTokens.push('/* Title - Small */');
-    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-small`, 'Roboto', 'Medium', '500px', '0.875rem', '1.25rem', '0.00625rem'));
+    cssTokens.push(...generateTypescale(`${prefix}-typescale-title-small`, 'Roboto', 'Medium', '500', '0.875rem', '1.25rem', '0.00625rem'));
 
     return `:root {\n${cssTokens.map((curr) => '  ' + curr).join('\n')}\n}\n`;
 }
