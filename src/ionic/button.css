@@ -1,5 +1,9 @@
 /* Common Buttons: https://m3.material.io/components/buttons/specs */
 :root[mode=md] {
+  button {
+    text-transform: none;
+  }
+
   ion-button,
   ion-button.md-filled,
   ion-button.mat-filled,
@@ -29,7 +33,6 @@
     letter-spacing: var(--mat-sys-label-large-letter-spacing);
 
     height: 40px;
-    text-transform: none;
   }
 
   ion-button ion-icon,

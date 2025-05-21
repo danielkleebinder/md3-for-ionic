@@ -38,7 +38,7 @@ Afterwards, add the following line of CSS code at the bottom of your `global.scs
 And that's it, you can now extend the existing theme files and enjoy your MD3. To also add manual dark mode toggling,
 add the following to your global CSS:
 
-``css
+```css
 :root {
   color-scheme: light dark;
 }
@@ -52,8 +52,7 @@ add the following to your global CSS:
 :root.ion-palette-dark {
   color-scheme: dark;
 }
-
-``
+```
 
 ### Add Roboto Font (recommended)
 
