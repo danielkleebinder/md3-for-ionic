@@ -33,6 +33,7 @@
     letter-spacing: var(--mat-sys-label-large-letter-spacing);
 
     height: 40px;
+    text-transform: none;
   }
 
   ion-button ion-icon,
