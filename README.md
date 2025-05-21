@@ -4,8 +4,7 @@ This repository provides a tool-set for generating [Material Design 3 (MD3)](htt
 similar to the [MD3 theme builder](https://m3.material.io/theme-builder), and creates style overrides for the
 [Ionic Framework](https://ionic.io/) in order to apply MD3.
 
-__Note__: If you are not relying on the Ionic Framework, you are probably better off using
-the [MD3 theme builder](https://m3.material.io/theme-builder).
+__Demo__: Try the [Ionic Framework](https://ionic.io/) kitchen sink demo with [MD3](https://m3.material.io/) applied [here on Vercel](https://md3-for-ionic-demo.vercel.app/).
 
 ### Run locally
 
@@ -32,11 +31,23 @@ In order for your Ionic application to recognize your generated MD3 styles and I
 newly created `md3/` folder (a sub-directory of your `--output` directory) into your Ionic project into `src/theme`.
 Afterwards, add the following line of CSS code at the bottom of your `global.scss` file:
 
-```CSS
+```css
 @import "theme/md3/theme.css";
 ```
 
-And that's it, you can now extend the existing theme files and enjoy your MD3.
+And that's it, you can now extend the existing theme files and enjoy your MD3. To also add manual dark mode toggling,
+add the following to your global CSS:
+
+``css
+:root.prefers-dark,
+:root.ion-palette-dark {
+  color-scheme: dark !important;
+}
+
+:root.prefers-light {
+  color-scheme: light !important;
+}
+``
 
 ### Add Roboto Font (recommended)
 
