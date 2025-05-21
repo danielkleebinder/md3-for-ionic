@@ -7,5 +7,9 @@
     --clear-button-color: var(--mat-sys-on-surface);
     --color: var(--mat-sys-on-surface);
     --icon-color: var(--mat-sys-on-surface);
+
+    .searchbar-input {
+      border: 1px solid var(--mat-sys-outline-variant);
+    }
   }
 }

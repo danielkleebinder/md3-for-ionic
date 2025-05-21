@@ -39,14 +39,20 @@ And that's it, you can now extend the existing theme files and enjoy your MD3. T
 add the following to your global CSS:
 
 ``css
-:root.prefers-dark,
-:root.ion-palette-dark {
-  color-scheme: dark !important;
+:root {
+  color-scheme: light dark;
 }
 
-:root.prefers-light {
-  color-scheme: light !important;
+:root.prefers-light,
+:root.ion-palette-light {
+  color-scheme: light;
 }
+
+:root.prefers-dark,
+:root.ion-palette-dark {
+  color-scheme: dark;
+}
+
 ``
 
 ### Add Roboto Font (recommended)

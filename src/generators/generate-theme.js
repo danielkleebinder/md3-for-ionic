@@ -12,6 +12,8 @@ export const generateTheme = (theme, options) => {
 
     const sysColorPrefix = options.sysColorPrefix ?? 'mat-sys';
     result.push(`/* Material Design 3 color schemes */`);
+    result.push(`--${sysColorPrefix}-source: ${hexFromArgb(theme.source)};`);
+    result.push('');
     generateSchemeProperties(
         theme.schemes.light.toJSON(),
         theme.schemes.dark.toJSON(),

@@ -4,8 +4,9 @@
     --border-radius: 2px;
     --border-width: 2px;
     --border-color: var(--mat-sys-on-surface-variant);
-    --border-color-checked: var(--mat-sys-primary);
-    --checkbox-background-checked: var(--mat-sys-primary);
-    --checkmark-color: var(--mat-sys-on-primary);
+    --border-color-checked: var(--ion-color-base, var(--mat-sys-primary));
+    --checkbox-background: var(--mat-sys-surface);
+    --checkbox-background-checked: var(--ion-color-base, var(--mat-sys-primary));
+    --checkmark-color: var(--ion-color-contrast, var(--mat-sys-on-primary));
   }
 }
