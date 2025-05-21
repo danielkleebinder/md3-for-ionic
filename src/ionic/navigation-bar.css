@@ -1,37 +1,39 @@
 /* Navigation bar: https://m3.material.io/components/navigation-bar/specs */
-ion-tab-bar {
+:root[mode=md] {
+  ion-tab-bar {
     --background: var(--mat-sys-surface-container);
     --color: var(--mat-sys-on-surface);
     --border: none;
     height: 80px;
-}
+  }
 
-ion-tab-bar ion-tab-button {
+  ion-tab-bar ion-tab-button {
     --padding-top: 12px;
     --padding-bottom: 16px;
     --ripple-color: transparent;
     --color: var(--mat-sys-on-surface-variant);
     color: var(--mat-sys-on-surface-variant);
-}
+  }
 
-ion-tab-bar ion-tab-button ion-icon {
+  ion-tab-bar ion-tab-button ion-icon {
     font-size: 24px;
     margin: 0 0 4px;
     padding: 4px 20px;
     border-radius: 16px;
     transition: background-color .2s ease-in-out;
-}
+  }
 
-ion-tab-bar ion-tab-button ion-label {
+  ion-tab-bar ion-tab-button ion-label {
     margin: 0;
-}
+  }
 
-ion-tab-bar ion-tab-button.tab-selected {
+  ion-tab-bar ion-tab-button.tab-selected {
     --color: var(--mat-sys-on-surface);
     color: var(--mat-sys-on-surface);
-}
+  }
 
-ion-tab-bar ion-tab-button.tab-selected ion-icon {
+  ion-tab-bar ion-tab-button.tab-selected ion-icon {
     background: var(--mat-sys-secondary-container);
     color: var(--mat-sys-on-secondary-container);
+  }
 }
