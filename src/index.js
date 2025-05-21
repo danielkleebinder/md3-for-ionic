@@ -3,7 +3,7 @@ import * as fs from "fs-extra";
 import commandLineArgs from "command-line-args";
 import {argbFromHex, themeFromSourceColor} from "@material/material-color-utilities";
 
-import {generateTheme, generateUtilities, writeStyleSheet} from "./generators/index.js";
+import {generateTheme, generateTypescale, generateUtilities, writeStyleSheet} from "./generators/index.js";
 
 
 const optionDefinitions = [
@@ -33,18 +33,21 @@ const theme = themeFromSourceColor(
     ]
 );
 
-const paletteTones = [100, 99, 95, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0];
+const paletteTones = [100, 99, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0];
 const generatorOpts = {sysColorPrefix, customColorPrefix, refColorPrefix, paletteTones};
 
 const themeCss = generateTheme(theme, generatorOpts);
+const typescaleCss = generateTypescale(theme, generatorOpts);
 const utilitiesCss = generateUtilities(theme, generatorOpts);
 
 writeStyleSheet('theme.css', themeCss, `${outDir}/md3/specs`);
+writeStyleSheet('typescale.css', typescaleCss, `${outDir}/md3/specs`);
 writeStyleSheet('utilities.css', utilitiesCss, `${outDir}/md3/specs`);
 
 // Write barrel export for specification files
 writeStyleSheet('index.css',
     '@import url("theme.css");\n' +
+    '@import url("typescale.css");\n' +
     '@import url("utilities.css");\n',
     `${outDir}/md3/specs`);
 

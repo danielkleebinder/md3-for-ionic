@@ -1,0 +1,7 @@
+:root[mode=md] {
+  ion-skeleton-text {
+    --background: var(--mat-sys-surface-container-highest);
+    background: var(--background);
+    border-radius: var(--mat-sys-corner-medium);
+  }
+}

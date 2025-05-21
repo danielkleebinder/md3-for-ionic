@@ -1,0 +1,5 @@
+:root[mode=md] {
+  ion-thumbnail {
+    border-radius: var(--mat-sys-corner-medium);
+  }
+}

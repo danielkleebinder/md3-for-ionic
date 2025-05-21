@@ -1,0 +1,26 @@
+:root[mode=md] {
+  ion-alert {
+    --background: var(--mat-sys-surface-container-high);
+
+    .alert-wrapper {
+      box-shadow: var(--mat-sys-level3);
+      border-radius: var(--mat-sys-corner-extra-large);
+    }
+
+    .alert-title {
+      font: var(--mat-sys-headline-small) !important;
+      letter-spacing: var(--mat-sys-headline-small-letter-spacing) !important;
+    }
+  }
+
+  ion-loading {
+    --background: var(--mat-sys-surface-container-high);
+    --spinner-color: var(--mat-sys-primary);
+
+    .loading-wrapper {
+      color: var(--mat-sys-on-surface);
+      box-shadow: var(--mat-sys-level3);
+      border-radius: var(--mat-sys-corner-large);
+    }
+  }
+}

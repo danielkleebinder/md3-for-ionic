@@ -1,5 +1,5 @@
 import {hexFromArgb} from "@material/material-color-utilities";
-import {generateSchemeProperties} from "./utils.js";
+import {generateSchemeProperties, rgbFromArgb} from "./utils.js";
 
 /**
  * Apply a theme to an element
@@ -15,13 +15,21 @@ export const generateTheme = (theme, options) => {
     generateSchemeProperties(
         theme.schemes.light.toJSON(),
         theme.schemes.dark.toJSON(),
-        (token, lightHex, darkHex) => result.push(`--${sysColorPrefix}-${token}: light-dark(${lightHex}, ${darkHex});`)
+        (token, lightHex, darkHex, lightRgb, darkRgb) => {
+            result.push(`--${sysColorPrefix}-${token}: light-dark(${lightHex}, ${darkHex});`);
+            result.push(`--${sysColorPrefix}-${token}-rgb: light-dark(${lightRgb}, ${darkRgb});`);
+        }
     );
     result.push(`--${sysColorPrefix}-surface-container-lowest: light-dark(${hexFromArgb(theme.palettes.neutral.tone(100))}, ${hexFromArgb(theme.palettes.neutral.tone(4))});`);
+    result.push(`--${sysColorPrefix}-surface-container-lowest-rgb: light-dark(${rgbFromArgb(theme.palettes.neutral.tone(100))}, ${rgbFromArgb(theme.palettes.neutral.tone(4))});`);
     result.push(`--${sysColorPrefix}-surface-container-low: light-dark(${hexFromArgb(theme.palettes.neutral.tone(96))}, ${hexFromArgb(theme.palettes.neutral.tone(10))});`);
+    result.push(`--${sysColorPrefix}-surface-container-low-rgb: light-dark(${rgbFromArgb(theme.palettes.neutral.tone(96))}, ${rgbFromArgb(theme.palettes.neutral.tone(10))});`);
     result.push(`--${sysColorPrefix}-surface-container: light-dark(${hexFromArgb(theme.palettes.neutral.tone(94))}, ${hexFromArgb(theme.palettes.neutral.tone(12))});`);
+    result.push(`--${sysColorPrefix}-surface-container-rgb: light-dark(${rgbFromArgb(theme.palettes.neutral.tone(94))}, ${rgbFromArgb(theme.palettes.neutral.tone(12))});`);
     result.push(`--${sysColorPrefix}-surface-container-high: light-dark(${hexFromArgb(theme.palettes.neutral.tone(92))}, ${hexFromArgb(theme.palettes.neutral.tone(17))});`);
+    result.push(`--${sysColorPrefix}-surface-container-high-rgb: light-dark(${rgbFromArgb(theme.palettes.neutral.tone(92))}, ${rgbFromArgb(theme.palettes.neutral.tone(17))});`);
     result.push(`--${sysColorPrefix}-surface-container-highest: light-dark(${hexFromArgb(theme.palettes.neutral.tone(90))}, ${hexFromArgb(theme.palettes.neutral.tone(22))});`);
+    result.push(`--${sysColorPrefix}-surface-container-highest-rgb: light-dark(${rgbFromArgb(theme.palettes.neutral.tone(90))}, ${rgbFromArgb(theme.palettes.neutral.tone(22))});`);
 
     if (theme.customColors?.length > 0) {
         const customColorPrefix = options.customColorPrefix ?? 'mat-custom';
@@ -31,7 +39,10 @@ export const generateTheme = (theme, options) => {
             generateSchemeProperties(
                 customColor.light,
                 customColor.dark,
-                (token, lightHex, darkHex) => result.push(`--${customColorPrefix}-${customColor.color.name}-${token}: light-dark(${lightHex}, ${darkHex});`)
+                (token, lightHex, darkHex, lightRgb, darkRgb) => {
+                    result.push(`--${customColorPrefix}-${customColor.color.name}-${token}: light-dark(${lightHex}, ${darkHex});`);
+                    result.push(`--${customColorPrefix}-${customColor.color.name}-${token}-rgb: light-dark(${lightRgb}, ${darkRgb});`);
+                }
             );
         });
     }
@@ -43,6 +54,7 @@ export const generateTheme = (theme, options) => {
         const tones = options?.paletteTones ?? [];
         for (const [key, palette] of Object.entries(theme.palettes)) {
             const paletteKey = key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+            result.push('');
             for (const tone of tones) {
                 const token = `--${refColorPrefix}-${paletteKey}${tone}`;
                 const color = hexFromArgb(palette.tone(tone));

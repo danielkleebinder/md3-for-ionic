@@ -1,5 +1,5 @@
 :root[mode=md] {
-    ion-label {
-        color: var(--mat-sys-on-surface);
-    }
+  ion-label {
+    color: var(--mat-sys-on-surface);
+  }
 }

@@ -1,6 +1,7 @@
 @import url("_colorings.css");
 
 @import url("accordion.css");
+@import url("alert.css");
 @import url("badge.css");
 @import url("breadcrumbs.css");
 @import url("button.css");
@@ -12,14 +13,18 @@
 @import url("headings.css");
 @import url("label.css");
 @import url("list.css");
+@import url("menu.css");
 @import url("modal.css");
 @import url("navigation-bar.css");
 @import url("popover.css");
 @import url("progress.css");
 @import url("radio-button.css");
+@import url("search.css");
 @import url("segment.css");
 @import url("select.css");
 @import url("sheet.css");
+@import url("skeleton.css");
 @import url("switch.css");
+@import url("thumbnail.css");
 @import url("toast.css");
 @import url("top-app-bar.css");

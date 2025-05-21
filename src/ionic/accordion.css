@@ -5,5 +5,6 @@
     background: var(--mat-sys-surface);
     color: var(--mat-sys-on-surface);
     overflow: hidden;
+    margin: 16px;
   }
 }

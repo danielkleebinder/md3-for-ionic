@@ -1,89 +1,65 @@
 /* Lists: https://m3.material.io/components/lists/specs */
 :root[mode=md] {
+  ion-list {
+    background: var(--mat-sys-surface);
+    color: var(--mat-sys-on-surface);
+  }
+
+  ion-item {
+    --background: var(--mat-sys-surface);
+    --color: var(--mat-sys-on-surface);
+    --border-color: var(--mat-sys-surface-variant);
+
+    font: var(--mat-sys-body-large);
+    letter-spacing: var(--mat-sys-body-large-letter-spacing);
+  }
+
+  ion-item ion-label h2 {
+    font: var(--mat-sys-body-large);
+    letter-spacing: var(--mat-sys-body-large-letter-spacing);
+  }
+
+  ion-item ion-label p {
+    color: var(--mat-sys-on-surface-variant);
+    font: var(--mat-sys-body-medium);
+    letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+  }
+
+  ion-item ion-icon[slot='start'] {
+    color: var(--mat-sys-on-surface-variant);
+  }
+
+  ion-item ion-icon[slot='end'] {
+    color: var(--mat-sys-on-surface-variant);
+    font-size: 24px;
+  }
+
+  ion-item-divider {
+    --background: var(--mat-sys-background);
+    --color: var(--mat-sys-on-background);
+
+    color: var(--mat-sys-on-background);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: inherit;
+    border: none;
+  }
+
+  ion-item-divider ion-icon {
+    font-size: 24px;
+    color: inherit;
+  }
+
+  ion-card,
+  ion-popover {
     ion-list {
-        background: unset;
-        color: var(--mat-sys-on-surface);
+      background: inherit;
+      color: inherit;
     }
 
     ion-item {
-        --background: var(--mat-sys-surface);
-        --color: var(--mat-sys-on-surface);
-        --border-color: var(--mat-sys-surface-variant);
-
-        font: var(--mat-sys-typescale-body-large);
-        letter-spacing: var(--mat-sys-typescale-body-large-letter-spacing);
+      --background: inherit;
+      --color: inherit;
     }
-
-    ion-item ion-label h2 {
-        font: var(--mat-sys-typescale-body-large);
-        letter-spacing: var(--mat-sys-typescale-body-large-letter-spacing);
-    }
-
-    ion-item ion-label p {
-        color: var(--mat-sys-on-surface-variant);
-        font: var(--mat-sys-typescale-body-medium);
-        letter-spacing: var(--mat-sys-typescale-body-medium-letter-spacing);
-    }
-
-    ion-item ion-icon[slot='start'] {
-        color: var(--mat-sys-on-surface-variant);
-    }
-
-    ion-item:not(:has(ion-input)) > ion-icon[slot='start'] {
-        background: var(--mat-sys-primary);
-        color: var(--mat-sys-on-primary);
-        border-radius: var(--mat-sys-corner-medium);
-        padding: 16px;
-        margin: 12px 16px 12px 0;
-        font-size: 24px;
-    }
-
-    ion-popover ion-item:not(:has(ion-input)) > ion-icon[slot='start'] {
-        padding: 10px;
-    }
-
-    ion-item ion-icon[slot='end'] {
-        color: var(--mat-sys-on-surface-variant);
-        font-size: 24px;
-    }
-
-    ion-list.standalone {
-        padding: 8px 16px;
-    }
-
-    ion-list.standalone ion-list-header {
-        padding: 0;
-    }
-
-    ion-list.standalone ion-item {
-        --background: var(--mat-sys-surface-container);
-    }
-
-    ion-list.standalone > *:first-of-type ion-item,
-    ion-list.standalone > ion-item:first-of-type {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-    ion-list.standalone > *:last-of-type ion-item,
-    ion-list.standalone > ion-item:last-of-type {
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-    }
-
-    ion-item-divider {
-        --background: var(--mat-sys-background);
-        --color: var(--mat-sys-on-background);
-
-        color: var(--mat-sys-on-background);
-        padding-top: 8px;
-        padding-bottom: 8px;
-        font-size: inherit;
-        border: none;
-    }
-
-    ion-item-divider ion-icon {
-        font-size: 24px;
-        color: inherit;
-    }
+  }
 }

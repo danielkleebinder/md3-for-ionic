@@ -3,11 +3,15 @@
    See: https://ionicframework.com/docs/api/modal#custom-sheet-height
 */
 :root[mode=md] {
-    .ion-modal-height-auto {
-        --height: auto;
-    }
+  ion-modal.modal-sheet::part(content) {
+    border-radius: var(--mat-sys-corner-extra-large-top);
+  }
 
-    .ion-modal-shadow {
-        --box-shadow: var(--mat-sys-elevation-3);
-    }
+  .ion-modal-height-auto {
+    --height: auto;
+  }
+
+  .ion-modal-shadow {
+    --box-shadow: var(--mat-sys-elevation-3);
+  }
 }

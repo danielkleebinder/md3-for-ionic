@@ -1,12 +1,19 @@
 import fs from "fs";
-import {hexFromArgb} from "@material/material-color-utilities";
+import {hexFromArgb, rgbaFromArgb} from "@material/material-color-utilities";
+
+export const rgbFromArgb = (argb) => {
+    const rgba = rgbaFromArgb(argb);
+    return `rgb(${rgba.r}, ${rgba.g}, ${rgba.b})`;
+}
 
 export const generateSchemeProperties = (lightScheme, darkScheme, callback) => {
     for (const [key] of Object.entries(lightScheme)) {
         const token = key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-        const lightColor = hexFromArgb(lightScheme[key]);
-        const darkColor = hexFromArgb(darkScheme[key]);
-        callback(token, lightColor, darkColor);
+        const lightHex = hexFromArgb(lightScheme[key]);
+        const darkHex = hexFromArgb(darkScheme[key]);
+        const lightRgb = rgbFromArgb(lightScheme[key]);
+        const darkRgb = rgbFromArgb(darkScheme[key]);
+        callback(token, lightHex, darkHex, lightRgb, darkRgb);
     }
 };
 
