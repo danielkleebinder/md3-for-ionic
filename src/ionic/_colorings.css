@@ -1,0 +1,62 @@
+.ion-color-primary {
+  --ion-color-base: var(--mat-sys-primary-container) !important;
+  --ion-color-contrast: var(--mat-sys-on-primary-container) !important;
+  --ion-color-shade: var(--mat-sys-primary-container) !important;
+  --ion-color-tint: var(--mat-sys-primary-container) !important;
+}
+
+.ion-color-secondary {
+  --ion-color-base: var(--mat-sys-secondary-container) !important;
+  --ion-color-contrast: var(--mat-sys-on-secondary-container) !important;
+  --ion-color-shade: var(--mat-sys-secondary-container) !important;
+  --ion-color-tint: var(--mat-sys-secondary-container) !important;
+}
+
+.ion-color-tertiary {
+  --ion-color-base: var(--mat-sys-tertiary-container) !important;
+  --ion-color-contrast: var(--mat-sys-on-tertiary-container) !important;
+  --ion-color-shade: var(--mat-sys-tertiary-container) !important;
+  --ion-color-tint: var(--mat-sys-tertiary-container) !important;
+}
+
+.ion-color-success {
+  --ion-color-base: var(--mat-custom-success-color-container) !important;
+  --ion-color-contrast: var(--mat-custom-success-on-color-container) !important;
+  --ion-color-shade: var(--mat-custom-success-color-container) !important;
+  --ion-color-tint: var(--mat-custom-success-color-container) !important;
+}
+
+.ion-color-warning {
+  --ion-color-base: var(--mat-custom-warning-color-container) !important;
+  --ion-color-contrast: var(--mat-custom-warning-on-color-container) !important;
+  --ion-color-shade: var(--mat-custom-warning-color-container) !important;
+  --ion-color-tint: var(--mat-custom-warning-color-container) !important;
+}
+
+.ion-color-danger {
+  --ion-color-base: var(--mat-sys-error-container) !important;
+  --ion-color-contrast: var(--mat-sys-on-error-container) !important;
+  --ion-color-shade: var(--mat-sys-error-container) !important;
+  --ion-color-tint: var(--mat-sys-error-container) !important;
+}
+
+.ion-color-light {
+  --ion-color-base: var(--mat-sys-surface-container-lowest) !important;
+  --ion-color-contrast: var(--mat-sys-on-surface) !important;
+  --ion-color-shade: var(--mat-sys-surface-container-low) !important;
+  --ion-color-tint: var(--mat-sys-surface-container-lowest) !important;
+}
+
+.ion-color-medium {
+  --ion-color-base: var(--mat-sys-surface-container) !important;
+  --ion-color-contrast: var(--mat-sys-on-surface) !important;
+  --ion-color-shade: var(--mat-sys-surface-container-high) !important;
+  --ion-color-tint: var(--mat-sys-surface-container) !important;
+}
+
+.ion-color-dark {
+  --ion-color-base: var(--mat-sys-surface-container-highest) !important;
+  --ion-color-contrast: var(--mat-sys-on-surface) !important;
+  --ion-color-shade: var(--mat-sys-surface-container-highest) !important;
+  --ion-color-tint: var(--mat-sys-surface-container-highest) !important;
+}

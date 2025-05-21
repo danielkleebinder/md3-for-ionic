@@ -7,30 +7,6 @@ similar to the [MD3 theme builder](https://m3.material.io/theme-builder), and cr
 __Note__: If you are not relying on the Ionic Framework, you are probably better off using
 the [MD3 theme builder](https://m3.material.io/theme-builder).
 
-[comment]: <> (## Installation)
-
-[comment]: <> (```bash)
-
-[comment]: <> (npm i @dk/md3-for-ionic --save-dev)
-
-[comment]: <> (```)
-
-[comment]: <> (### Generate Ionic Overrides)
-
-[comment]: <> (```bash)
-
-[comment]: <> (node node_modules/@dk/md3-for-ionic/index.js --color=#00ff00)
-
-[comment]: <> (```)
-
-[comment]: <> (or by using NPX:)
-
-[comment]: <> (```bash)
-
-[comment]: <> (npx @dk/md3-for-ionic --color=#00ff00)
-
-[comment]: <> (```)
-
 ### Run locally
 
 You can run the code in this repository locally by cloning the repository and running `npm install`:
@@ -44,7 +20,7 @@ npm install
 Afterwards, just run the `src/index.js` file as node process:
 
 ```bash
-node . --output="./out" --color=#ff0000
+node . --output="./out" --color=#ff0000 --with-ionic-overrides
 ```
 
 The generator will derive primary, secondary, tertiary, a neutral, a neutral variant and an error color from the color

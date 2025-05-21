@@ -1,39 +1,43 @@
 /* Top app bar: https://m3.material.io/components/top-app-bar/specs */
 ion-toolbar {
-    --background: var(--md-sys-color-surface);
-    --color: var(--md-sys-color-on-surface);
+  --background: var(--mat-sys-surface-container);
+  --color: var(--mat-sys-on-surface);
 
-    --min-height: 64px;
-    --padding-start: 16px;
-    --padding-end: 16px;
+  --min-height: 64px;
+  --padding-start: 16px;
+  --padding-end: 16px;
 }
 
 ion-toolbar,
 ion-toolbar ion-title {
-    font-family: var(--md-sys-typescale-title-large-font-family-name);
-    font-style: var(--md-sys-typescale-title-large-font-family-style);
-    font-weight: var(--md-sys-typescale-title-large-font-weight);
-    font-size: var(--md-sys-typescale-title-large-font-size);
-    line-height: var(--md-sys-typescale-title-large-line-height);
-    letter-spacing: var(--md-sys-typescale-title-large-letter-spacing);
+  font-family: var(--mat-sys-title-large-font-family-name);
+  font-style: var(--mat-sys-title-large-font-family-style);
+  font-weight: var(--mat-sys-title-large-font-weight);
+  font-size: var(--mat-sys-title-large-font-size);
+  line-height: var(--mat-sys-title-large-line-height);
+  letter-spacing: var(--mat-sys-title-large-letter-spacing);
 }
 
 ion-toolbar *[slot=start] {
-    color: var(--md-sys-color-on-surface);
+  color: var(--mat-sys-on-surface);
 }
 
 ion-toolbar *[slot=end] {
-    color: var(--md-sys-color-on-surface-variant);
+  color: var(--mat-sys-on-surface-variant);
 }
 
-ion-header::after {
+ion-header {
+  box-shadow: none !important;
+
+  &::after {
     display: none;
+  }
 }
 
 ion-header.scrolled {
-    box-shadow: var(--md-sys-elevation-2);
+  box-shadow: var(--mat-sys-level2);
 }
 
 ion-header.scrolled ion-toolbar {
-    --background: var(--md-sys-color-surface-container);
+  --background: var(--mat-sys-surface-container);
 }
