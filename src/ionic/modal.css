@@ -1,0 +1,13 @@
+/*
+   Use this CSS class to let the modal content decide the height of the modal
+   See: https://ionicframework.com/docs/api/modal#custom-sheet-height
+*/
+:root[mode=md] {
+    .ion-modal-height-auto {
+        --height: auto;
+    }
+
+    .ion-modal-shadow {
+        --box-shadow: var(--mat-sys-elevation-3);
+    }
+}

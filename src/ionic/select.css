@@ -1,0 +1,12 @@
+:root[mode=md] {
+    ion-select {
+        --highlight-color-valid: var(--md-custom-color-success);
+        --highlight-color-invalid: var(--mat-sys-error);
+        --highlight-color-focused: var(--mat-sys-primary);
+    }
+
+    ion-select .select-wrapper-inner {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+/* Progress indicators: https://m3.material.io/components/progress-indicators/specs */
+:root[mode=md] {
+    ion-progress-bar {
+        --progress-background: var(--mat-sys-primary) !important;
+        --background: var(--mat-sys-secondary-container) !important;
+
+        border-radius: var(--mat-sys-shape-corner-full);
+        min-height: 4px;
+    }
+
+    ion-spinner {
+        --color: var(--mat-sys-on-surface);
+    }
+
+    @keyframes md-spinner-rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    ion-spinner.spinner-circular {
+        animation-name: md-spinner-rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    ion-refresher .refresher-refreshing-icon,
+    ion-refresher .refresher-pulling-icon {
+        background: var(--mat-sys-secondary);
+        border-color: var(--mat-sys-secondary);
+        color: var(--mat-sys-on-secondary);
+        box-shadow: var(--mat-sys-elevation-2);
+    }
+
+    ion-refresher.refresher-native .arrow-container ion-icon {
+        color: var(--mat-sys-on-secondary);
+    }
+
+    ion-refresher ion-spinner {
+        color: var(--mat-sys-on-secondary) !important;
+    }
+}

@@ -1,0 +1,22 @@
+:root[mode=md] {
+    ion-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 26px;
+
+        --background: var(--mat-sys-error);
+        --color: var(--mat-sys-on-error);
+        --padding-top: 4px;
+        --padding-bottom: 4px;
+        --padding-start: 6px; /* Differs from original spec (4px) */
+        --padding-end: 6px; /* Differs from original spec (4px) */
+
+        font: var(--mat-sys-typescale-label-small);
+        border-radius: var(--mat-sys-shape-corner-full);
+    }
+
+    ion-toolbar ion-badge[slot='end'] {
+        background: var(--mat-sys-surface-variant);
+    }
+}

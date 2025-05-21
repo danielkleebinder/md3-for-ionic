@@ -1,0 +1,25 @@
+:root[mode=md] {
+    ion-breadcrumbs {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    ion-toolbar ion-breadcrumbs:only-child {
+        margin: 0;
+    }
+
+    ion-toolbar:has(ion-breadcrumbs:only-child) {
+        --min-height: 46px;
+    }
+
+    ion-breadcrumbs > ion-breadcrumb {
+        font-size: 0.8rem;
+        opacity: 0.9;
+        color: var(--mat-sys-on-surface-variant);
+    }
+
+    ion-breadcrumbs > ion-breadcrumb.breadcrumb-active {
+        opacity: 1;
+        color: var(--mat-sys-on-surface);
+    }
+}
