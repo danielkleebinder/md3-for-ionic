@@ -1,22 +1,32 @@
 /* Chips: https://m3.material.io/components/chips/specs */
 :root[mode=md] {
   ion-chip {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: fit-content;
-    box-shadow: none;
-    border-radius: 8px;
-    min-height: 42px;
+    min-height: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    background: var(--mat-sys-secondary-container);
-    color: var(--mat-sys-on-secondary-container);
+    box-shadow: none;
+
+    border-width: 1px;
+    border-radius: var(--mat-sys-corner-small);
+    border-color: var(--ion-color-tint, var(--mat-sys-outline));
+    border-style: solid;
+
+    --background: var(--ion-color-base, var(--mat-sys-surface-container-low));
+    background: var(--background);
+
+    --color: var(--ion-color-contrast, var(--mat-sys-on-surface));
+    color: var(--color);
+
+    ion-icon {
+      width: 18px;
+      height: 18px;
+      --color: var(--ion-color-contrast, var(--mat-sys-primary));
+    }
   }
 
   ion-chip.chip-outline {
     border: 1px solid var(--mat-sys-outline);
-    color: var(--mat-sys-on-surface);
-    background: transparent;
+    --color: var(--mat-sys-on-surface);
+    --background: transparent;
   }
 }

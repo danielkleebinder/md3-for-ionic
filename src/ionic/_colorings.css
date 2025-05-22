@@ -62,7 +62,7 @@
   --ion-color-primary-contrast: var(--mat-sys-on-primary);
   --ion-color-primary-contrast-rgb: var(--mat-sys-on-primary-rgb);
   --ion-color-primary-shade: color-mix(in srgb, var(--mat-sys-primary), var(--mat-sys-inverse-surface) 20%);
-  --ion-color-primary-tint-tint: color-mix(in srgb, var(--mat-sys-primary), var(--mat-sys-surface) 20%);
+  --ion-color-primary-tint: color-mix(in srgb, var(--mat-sys-primary), var(--mat-sys-surface) 20%);
 
   --ion-color-secondary: var(--mat-sys-secondary);
   --ion-color-secondary-rgb: var(--mat-sys-secondary-rgb);

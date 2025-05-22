@@ -54,6 +54,12 @@ add the following to your global CSS:
 }
 ```
 
+### Motion physics system (spring animations)
+
+The [motion physics system](https://m3.material.io/styles/motion/overview/how-it-works) of Material Design 3 expressive
+is also partially implemented and supported by this library. Buttons, switches, segments make extensive use of spring
+animations.
+
 ### Add Roboto Font (recommended)
 
 If you would like to use the Roboto font as well, you have to include the following lines in your `index.html` file.

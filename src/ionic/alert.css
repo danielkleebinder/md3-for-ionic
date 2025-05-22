@@ -7,9 +7,34 @@
       border-radius: var(--mat-sys-corner-extra-large);
     }
 
+    .alert-head {
+      padding: 24px 24px 16px;
+    }
+
     .alert-title {
-      font: var(--mat-sys-headline-small) !important;
-      letter-spacing: var(--mat-sys-headline-small-letter-spacing) !important;
+      font: var(--mat-sys-headline-small);
+      letter-spacing: var(--mat-sys-headline-small-letter-spacing);
+    }
+
+    .alert-message {
+      padding: 0 24px 24px;
+      font: var(--mat-sys-body-medium);
+      letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+      color: var(--mat-sys-on-surface-variant);
+    }
+
+    .alert-radio-label,
+    .alert-checkbox-label {
+      color: var(--mat-sys-on-surface) !important;
+    }
+
+    .alert-radio-group,
+    .alert-checkbox-group {
+      border: none;
+    }
+
+    .alert-button-group {
+      padding-bottom: 14px;
     }
   }
 

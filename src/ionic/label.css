@@ -1,5 +1,9 @@
 :root[mode=md] {
   ion-label {
-    color: var(--mat-sys-on-surface);
+    color: inherit;
+
+    &.ion-color {
+      color: var(--ion-color-base, var(--mat-sys-primary));
+    }
   }
 }

@@ -12,26 +12,38 @@
 
     font: var(--mat-sys-body-large);
     letter-spacing: var(--mat-sys-body-large-letter-spacing);
-  }
 
-  ion-item ion-label h2 {
-    font: var(--mat-sys-body-large);
-    letter-spacing: var(--mat-sys-body-large-letter-spacing);
-  }
+    ion-icon[slot='start'] {
+      color: var(--mat-sys-on-surface-variant);
+    }
 
-  ion-item ion-label p {
-    color: var(--mat-sys-on-surface-variant);
-    font: var(--mat-sys-body-medium);
-    letter-spacing: var(--mat-sys-body-medium-letter-spacing);
-  }
+    ion-icon[slot='end'] {
+      color: var(--mat-sys-on-surface-variant);
+      font-size: 24px;
+    }
 
-  ion-item ion-icon[slot='start'] {
-    color: var(--mat-sys-on-surface-variant);
-  }
+    ion-label {
+      h2 {
+        font: var(--mat-sys-title-large);
+        letter-spacing: var(--mat-sys-title-large-letter-spacing);
+      }
 
-  ion-item ion-icon[slot='end'] {
-    color: var(--mat-sys-on-surface-variant);
-    font-size: 24px;
+      h2 {
+        font: var(--mat-sys-title-medium);
+        letter-spacing: var(--mat-sys-title-medium-letter-spacing);
+      }
+
+      h3 {
+        font: var(--mat-sys-body-large);
+        letter-spacing: var(--mat-sys-body-large-letter-spacing);
+      }
+
+      p {
+        color: var(--mat-sys-on-surface-variant);
+        font: var(--mat-sys-body-medium);
+        letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+      }
+    }
   }
 
   ion-item-divider {
@@ -43,11 +55,11 @@
     padding-bottom: 8px;
     font-size: inherit;
     border: none;
-  }
 
-  ion-item-divider ion-icon {
-    font-size: 24px;
-    color: inherit;
+    ion-icon {
+      font-size: 24px;
+      color: inherit;
+    }
   }
 
   ion-card,
