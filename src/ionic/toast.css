@@ -1,14 +1,14 @@
 /* Snackbar: https://m3.material.io/components/snackbar/specs */
 :root[mode=md] {
   ion-toast {
-    --background: var(--mat-sys-inverse-surface);
-    --color: var(--mat-sys-inverse-on-surface);
-    --button-color: var(--mat-sys-inverse-on-surface);
-    --border-radius: var(--mat-sys-corner-extra-small);
-    --box-shadow: var(--mat-sys-level3);
+    --background: var(--md-sys-inverse-surface);
+    --color: var(--md-sys-inverse-on-surface);
+    --button-color: var(--md-sys-inverse-on-surface);
+    --border-radius: var(--md-sys-corner-extra-small);
+    --box-shadow: var(--md-sys-level3);
 
-    font: var(--mat-sys-body-large);
-    letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+    font: var(--md-sys-body-large);
+    letter-spacing: var(--md-sys-body-medium-letter-spacing);
 
     &::part(button) {
       text-transform: unset;

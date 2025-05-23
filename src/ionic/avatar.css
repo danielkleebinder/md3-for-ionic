@@ -1,8 +1,8 @@
 /* Avatar in lists: https://m3.material.io/components/lists/specs */
 :root[mode=md] {
   ion-avatar {
-    --border-radius: var(--mat-sys-corner-full);
-    background: var(--mat-sys-primary-container);
-    color: var(--mat-sys-on-primary-container);
+    --border-radius: var(--md-sys-corner-full);
+    background: var(--md-sys-primary-container);
+    color: var(--md-sys-on-primary-container);
   }
 }

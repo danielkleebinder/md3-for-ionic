@@ -5,17 +5,17 @@
   }
 
   ion-segment ion-segment-button {
-    font: var(--mat-sys-title-small);
-    letter-spacing: var(--mat-sys-title-small-letter-spacing);
+    font: var(--md-sys-title-small);
+    letter-spacing: var(--md-sys-title-small-letter-spacing);
     text-transform: unset;
 
     --ripple-color: transparent !important;
-    --color: var(--mat-sys-on-surface-variant);
-    --color-checked: var(--ion-color-contrast, var(--mat-sys-on-secondary));
-    --transition: color var(--mat-sys-expressive-default-spring-duration) var(--mat-sys-expressive-slow-spring);
-    --indicator-transition: transform var(--mat-sys-expressive-default-spring-duration) var(--mat-sys-expressive-slow-spring);
-    --indicator-color: var(--ion-color-base, var(--mat-sys-secondary));
-    --border-radius: var(--mat-sys-corner-extra-large);
+    --color: var(--md-sys-on-surface-variant);
+    --color-checked: var(--ion-color-contrast, var(--md-sys-on-secondary));
+    --transition: color var(--md-sys-expressive-default-spring-duration) var(--md-sys-expressive-slow-spring);
+    --indicator-transition: transform var(--md-sys-expressive-default-spring-duration) var(--md-sys-expressive-slow-spring);
+    --indicator-color: var(--ion-color-base, var(--md-sys-secondary));
+    --border-radius: var(--md-sys-corner-extra-large);
 
     --padding-start: 24px;
     --padding-end: 24px;
@@ -30,8 +30,8 @@
     ion-label, ion-icon {
       color: var(--color);
       transition-property: color;
-      transition-duration: var(--mat-sys-expressive-default-spring-duration);
-      transition-timing-function: var(--mat-sys-expressive-slow-spring);
+      transition-duration: var(--md-sys-expressive-default-spring-duration);
+      transition-timing-function: var(--md-sys-expressive-slow-spring);
     }
 
     &.segment-button-checked {
@@ -44,7 +44,7 @@
 
     &::part(indicator) {
       overflow: hidden;
-      border-radius: var(--mat-sys-corner-extra-large);
+      border-radius: var(--md-sys-corner-extra-large);
       inset: 0;
     }
 

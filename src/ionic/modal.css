@@ -4,7 +4,7 @@
 */
 :root[mode=md] {
   ion-modal.modal-sheet::part(content) {
-    border-radius: var(--mat-sys-corner-extra-large-top);
+    border-radius: var(--md-sys-corner-extra-large-top);
   }
 
   .ion-modal-height-auto {
@@ -12,6 +12,6 @@
   }
 
   .ion-modal-shadow {
-    --box-shadow: var(--mat-sys-level3);
+    --box-shadow: var(--md-sys-level3);
   }
 }

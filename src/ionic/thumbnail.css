@@ -1,6 +1,6 @@
 :root[mode=md] {
   ion-thumbnail {
     overflow: hidden;
-    border-radius: var(--mat-sys-corner-medium);
+    border-radius: var(--md-sys-corner-medium);
   }
 }

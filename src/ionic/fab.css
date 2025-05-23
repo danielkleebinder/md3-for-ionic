@@ -1,14 +1,14 @@
 /* Floating Action Buttons (FAB): https://m3.material.io/components/floating-action-button/overview */
 :root[mode=md] {
   ion-fab-button {
-    --background: var(--ion-color-base, var(--mat-sys-primary-container));
-    --color: var(--ion-color-contrast, var(--mat-sys-on-primary-container));
+    --background: var(--ion-color-base, var(--md-sys-primary-container));
+    --color: var(--ion-color-contrast, var(--md-sys-on-primary-container));
 
-    --box-shadow: var(--mat-sys-level3);
-    --border-radius: var(--mat-sys-corner-large);
+    --box-shadow: var(--md-sys-level3);
+    --border-radius: var(--md-sys-corner-large);
 
     --transition:
-      border-radius var(--mat-sys-expressive-default-spring-duration) var(--mat-sys-expressive-default-spring);
+      border-radius var(--md-sys-expressive-default-spring-duration) var(--md-sys-expressive-default-spring);
 
     --padding-start: 16px;
     --padding-end: 16px;
@@ -29,7 +29,7 @@
       --padding-end: 10px;
       --padding-top: 10px;
       --padding-bottom: 10px;
-      --border-radius: var(--mat-sys-corner-medium);
+      --border-radius: var(--md-sys-corner-medium);
 
       width: 40px;
       height: 40px;
@@ -42,7 +42,7 @@
 
     &.md-large,
     &[size=large] {
-      --border-radius: var(--mat-sys-corner-extra-large);
+      --border-radius: var(--md-sys-corner-extra-large);
       width: 96px;
       height: 96px;
 
@@ -57,7 +57,7 @@
     }
 
     &.fab-button-in-list {
-      --border-radius: var(--mat-sys-corner-full);
+      --border-radius: var(--md-sys-corner-full);
     }
   }
 }

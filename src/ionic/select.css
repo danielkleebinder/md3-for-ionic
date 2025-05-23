@@ -1,8 +1,8 @@
 :root[mode=md] {
   ion-select {
-    --highlight-color-valid: var(--md-custom-color-success);
-    --highlight-color-invalid: var(--mat-sys-error);
-    --highlight-color-focused: var(--mat-sys-primary);
+    --highlight-color-valid: var(--md-custom-success-color);
+    --highlight-color-invalid: var(--md-sys-error);
+    --highlight-color-focused: var(--md-sys-primary);
   }
 
   ion-select .select-wrapper-inner {

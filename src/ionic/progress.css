@@ -8,15 +8,15 @@
 
 :root[mode=md] {
   ion-progress-bar {
-    --progress-background: var(--ion-color-base, var(--mat-sys-primary)) !important;
-    --background: var(--ion-color-contrast, var(--mat-sys-secondary-container)) !important;
+    --progress-background: var(--ion-color-base, var(--md-sys-primary)) !important;
+    --background: var(--ion-color-contrast, var(--md-sys-secondary-container)) !important;
 
-    border-radius: var(--mat-sys-corner-full);
+    border-radius: var(--md-sys-corner-full);
     min-height: 4px;
   }
 
   ion-spinner {
-    --color: var(--ion-color-base, var(--mat-sys-on-surface));
+    --color: var(--ion-color-base, var(--md-sys-on-surface));
   }
 
   ion-spinner.spinner-circular {
@@ -27,17 +27,17 @@
 
   ion-refresher .refresher-refreshing-icon,
   ion-refresher .refresher-pulling-icon {
-    background: var(--mat-sys-secondary);
-    border-color: var(--mat-sys-secondary);
-    color: var(--mat-sys-on-secondary);
-    box-shadow: var(--mat-sys-level2);
+    background: var(--md-sys-secondary);
+    border-color: var(--md-sys-secondary);
+    color: var(--md-sys-on-secondary);
+    box-shadow: var(--md-sys-level2);
   }
 
   ion-refresher.refresher-native .arrow-container ion-icon {
-    color: var(--mat-sys-on-secondary);
+    color: var(--md-sys-on-secondary);
   }
 
   ion-refresher ion-spinner {
-    color: var(--mat-sys-on-secondary) !important;
+    color: var(--md-sys-on-secondary) !important;
   }
 }

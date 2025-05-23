@@ -3,32 +3,32 @@
   button {
     color: inherit;
     text-transform: none;
-    border-radius: var(--mat-sys-corner-full);
+    border-radius: var(--md-sys-corner-full);
   }
 
   ion-button,
   ion-button.md-filled,
   ion-button[fill=solid] {
-    --background: var(--ion-color-base, var(--mat-sys-primary));
-    --background-hover: var(--ion-color-base, var(--mat-sys-primary));
-    --background-focused: var(--ion-color-base, var(--mat-sys-primary));
-    --background-activated: var(--ion-color-base, var(--mat-sys-primary));
+    --background: var(--ion-color-base, var(--md-sys-primary));
+    --background-hover: var(--ion-color-base, var(--md-sys-primary));
+    --background-focused: var(--ion-color-base, var(--md-sys-primary));
+    --background-activated: var(--ion-color-base, var(--md-sys-primary));
 
-    --color: var(--ion-color-contrast, var(--mat-sys-on-primary));
-    --color-hover: var(--ion-color-contrast, var(--mat-sys-on-primary));
-    --color-focused: var(--ion-color-contrast, var(--mat-sys-on-primary));
-    --color-activated: var(--ion-color-contrast, var(--mat-sys-on-primary));
+    --color: var(--ion-color-contrast, var(--md-sys-on-primary));
+    --color-hover: var(--ion-color-contrast, var(--md-sys-on-primary));
+    --color-focused: var(--ion-color-contrast, var(--md-sys-on-primary));
+    --color-activated: var(--ion-color-contrast, var(--md-sys-on-primary));
 
     --box-shadow: none;
     --border-width: 1px;
     --border-radius: 28px;
-    --ripple-color: var(--mat-sys-surface-container-highest);
-    --transition: border-radius var(--mat-sys-expressive-default-spring-duration) var(--mat-sys-expressive-default-spring);
+    --ripple-color: var(--md-sys-surface-container-highest);
+    --transition: border-radius var(--md-sys-expressive-default-spring-duration) var(--md-sys-expressive-default-spring);
     --padding-start: 24px;
     --padding-end: 24px;
 
-    font: var(--mat-sys-label-large);
-    letter-spacing: var(--mat-sys-label-large-letter-spacing);
+    font: var(--md-sys-label-large);
+    letter-spacing: var(--md-sys-label-large-letter-spacing);
 
     height: 56px;
     text-transform: none;
@@ -36,7 +36,7 @@
     &.button-full,
     &.md-square,
     &[shape=square] {
-      --border-radius: var(--mat-sys-corner-large);
+      --border-radius: var(--md-sys-corner-large);
 
       &::part(native) {
         border-radius: var(--border-radius);
@@ -44,7 +44,7 @@
     }
 
     &.ion-activated {
-      --border-radius: var(--mat-sys-corner-medium);
+      --border-radius: var(--md-sys-corner-medium);
     }
 
     ion-icon {
@@ -64,8 +64,8 @@
 
   ion-button.button-small {
     height: 40px;
-    font: var(--mat-sys-label-small);
-    letter-spacing: var(--mat-sys-label-small-letter-spacing);
+    font: var(--md-sys-label-small);
+    letter-spacing: var(--md-sys-label-small-letter-spacing);
 
     --border-width: 1px;
     --border-radius: 20px;
@@ -76,11 +76,11 @@
     &.button-full,
     &.md-square,
     &[shape=square] {
-      --border-radius: var(--mat-sys-corner-medium);
+      --border-radius: var(--md-sys-corner-medium);
     }
 
     &.ion-activated {
-      --border-radius: var(--mat-sys-corner-small);
+      --border-radius: var(--md-sys-corner-small);
     }
 
     ion-icon {
@@ -91,8 +91,8 @@
 
   ion-button.button-large {
     height: 96px;
-    font: var(--mat-sys-title-large);
-    letter-spacing: var(--mat-sys-title-large-letter-spacing);
+    font: var(--md-sys-title-large);
+    letter-spacing: var(--md-sys-title-large-letter-spacing);
 
     --border-width: 2px;
     --border-radius: 48px;
@@ -103,11 +103,11 @@
     &.button-full,
     &.md-square,
     &[shape=square] {
-      --border-radius: var(--mat-sys-corner-extra-large);
+      --border-radius: var(--md-sys-corner-extra-large);
     }
 
     &.ion-activated {
-      --border-radius: var(--mat-sys-corner-large);
+      --border-radius: var(--md-sys-corner-large);
     }
 
     ion-icon {
@@ -125,66 +125,66 @@
   }
 
   ion-button.button-clear ion-icon {
-    color: var(--mat-sys-primary);
+    color: var(--md-sys-primary);
   }
 
   ion-button.md-filled-tonal {
-    --background: var(--mat-sys-secondary-container);
-    --background-hover: var(--mat-sys-secondary-container);
-    --background-focused: var(--mat-sys-secondary-container);
-    --background-activated: var(--mat-sys-secondary-container);
+    --background: var(--md-sys-secondary-container);
+    --background-hover: var(--md-sys-secondary-container);
+    --background-focused: var(--md-sys-secondary-container);
+    --background-activated: var(--md-sys-secondary-container);
 
-    --color: var(--mat-sys-on-secondary-container);
-    --color-hover: var(--mat-sys-on-secondary-container);
-    --color-focused: var(--mat-sys-on-secondary-container);
-    --color-activated: var(--mat-sys-on-secondary-container);
+    --color: var(--md-sys-on-secondary-container);
+    --color-hover: var(--md-sys-on-secondary-container);
+    --color-focused: var(--md-sys-on-secondary-container);
+    --color-activated: var(--md-sys-on-secondary-container);
 
-    --box-shadow: var(--mat-sys-level0);
+    --box-shadow: var(--md-sys-level0);
   }
 
   ion-button.md-filled-tonal ion-icon {
-    color: var(--mat-sys-on-secondary-container);
+    color: var(--md-sys-on-secondary-container);
   }
 
   ion-button.md-elevated {
-    --background: var(--mat-sys-surface-container-low);
-    --background-hover: var(--mat-sys-surface-container);
-    --background-focused: var(--mat-sys-surface-container);
-    --background-activated: var(--mat-sys-surface-container);
+    --background: var(--md-sys-surface-container-low);
+    --background-hover: var(--md-sys-surface-container);
+    --background-focused: var(--md-sys-surface-container);
+    --background-activated: var(--md-sys-surface-container);
 
-    --color: var(--mat-sys-primary);
-    --color-hover: var(--mat-sys-primary);
-    --color-focused: var(--mat-sys-primary);
-    --color-activated: var(--mat-sys-primary);
+    --color: var(--md-sys-primary);
+    --color-hover: var(--md-sys-primary);
+    --color-focused: var(--md-sys-primary);
+    --color-activated: var(--md-sys-primary);
 
-    --box-shadow: var(--mat-sys-level1);
+    --box-shadow: var(--md-sys-level1);
   }
 
   ion-button.md-elevated:hover {
-    --box-shadow: var(--mat-sys-level2);
+    --box-shadow: var(--md-sys-level2);
   }
 
   ion-button ion-icon,
   ion-button.md-elevated ion-icon {
     font-size: 18px;
-    color: var(--mat-sys-primary);
+    color: var(--md-sys-primary);
   }
 
   ion-button.md-outlined,
   ion-button[fill=outline] {
-    --background: var(--mat-sys-surface);
-    --background-hover: var(--mat-sys-surface);
-    --background-focused: var(--mat-sys-surface);
-    --background-activated: var(--mat-sys-surface);
+    --background: var(--md-sys-surface);
+    --background-hover: var(--md-sys-surface);
+    --background-focused: var(--md-sys-surface);
+    --background-activated: var(--md-sys-surface);
 
-    --color: var(--mat-sys-primary);
-    --color-hover: var(--mat-sys-primary);
-    --color-focused: var(--mat-sys-primary);
-    --color-activated: var(--mat-sys-primary);
+    --color: var(--md-sys-primary);
+    --color-hover: var(--md-sys-primary);
+    --color-focused: var(--md-sys-primary);
+    --color-activated: var(--md-sys-primary);
 
-    --box-shadow: var(--mat-sys-level0);
+    --box-shadow: var(--md-sys-level0);
 
-    --border-color: var(--mat-sys-outline);
+    --border-color: var(--md-sys-outline);
     --border-style: solid;
     --border-width: 1px;
   }
@@ -196,11 +196,11 @@
     --background-hover: transparent;
     --background-focused: transparent;
 
-    --color: var(--mat-sys-primary);
-    --color-hover: var(--mat-sys-primary);
-    --color-focused: var(--mat-sys-primary);
-    --color-activated: var(--mat-sys-primary);
+    --color: var(--md-sys-primary);
+    --color-hover: var(--md-sys-primary);
+    --color-focused: var(--md-sys-primary);
+    --color-activated: var(--md-sys-primary);
 
-    --box-shadow: var(--mat-sys-level0);
+    --box-shadow: var(--md-sys-level0);
   }
 }

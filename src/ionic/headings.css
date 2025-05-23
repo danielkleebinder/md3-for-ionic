@@ -1,29 +1,29 @@
 /* Headings */
 :root[mode=md] {
   h1 {
-    font-family: var(--mat-sys-display-large-font-family-name);
-    font-style: var(--mat-sys-display-large-font-family-style);
-    font-weight: var(--mat-sys-display-large-font-weight);
-    font-size: var(--mat-sys-display-large-font-size);
-    line-height: var(--mat-sys-display-large-line-height);
-    letter-spacing: var(--mat-sys-display-large-letter-spacing);
+    font-family: var(--md-sys-display-large-font-family-name);
+    font-style: var(--md-sys-display-large-font-family-style);
+    font-weight: var(--md-sys-display-large-font-weight);
+    font-size: var(--md-sys-display-large-font-size);
+    line-height: var(--md-sys-display-large-line-height);
+    letter-spacing: var(--md-sys-display-large-letter-spacing);
   }
 
   h2 {
-    font-family: var(--mat-sys-display-medium-font-family-name);
-    font-style: var(--mat-sys-display-medium-font-family-style);
-    font-weight: var(--mat-sys-display-medium-font-weight);
-    font-size: var(--mat-sys-display-medium-font-size);
-    line-height: var(--mat-sys-display-medium-line-height);
-    letter-spacing: var(--mat-sys-display-medium-letter-spacing);
+    font-family: var(--md-sys-display-medium-font-family-name);
+    font-style: var(--md-sys-display-medium-font-family-style);
+    font-weight: var(--md-sys-display-medium-font-weight);
+    font-size: var(--md-sys-display-medium-font-size);
+    line-height: var(--md-sys-display-medium-line-height);
+    letter-spacing: var(--md-sys-display-medium-letter-spacing);
   }
 
   h3 {
-    font-family: var(--mat-sys-display-small-font-family-name);
-    font-style: var(--mat-sys-display-small-font-family-style);
-    font-weight: var(--mat-sys-display-small-font-weight);
-    font-size: var(--mat-sys-display-small-font-size);
-    line-height: var(--mat-sys-display-small-line-height);
-    letter-spacing: var(--mat-sys-display-small-letter-spacing);
+    font-family: var(--md-sys-display-small-font-family-name);
+    font-style: var(--md-sys-display-small-font-family-style);
+    font-weight: var(--md-sys-display-small-font-weight);
+    font-size: var(--md-sys-display-small-font-size);
+    line-height: var(--md-sys-display-small-line-height);
+    letter-spacing: var(--md-sys-display-small-letter-spacing);
   }
 }

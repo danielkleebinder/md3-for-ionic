@@ -5,18 +5,18 @@
     --handle-height: 16px;
     --handle-max-height: 28px;
     --handle-transition:
-      transform var(--mat-sys-expressive-default-effects-duration) var(--mat-sys-expressive-default-effects),
-      background-color var(--mat-sys-expressive-default-effects-duration) var(--mat-sys-expressive-default-effects);
-    --handle-background: var(--mat-sys-outline);
+      transform var(--md-sys-expressive-default-effects-duration) var(--md-sys-expressive-default-effects),
+      background-color var(--md-sys-expressive-default-effects-duration) var(--md-sys-expressive-default-effects);
+    --handle-background: var(--md-sys-outline);
     --handle-background-checked: var(--ion-color-contrast);
-    --handle-border-radius: var(--mat-sys-corner-full);
+    --handle-border-radius: var(--md-sys-corner-full);
     --handle-box-shadow: none;
     --handle-spacing: 6px;
 
-    --track-background: var(--mat-sys-surface-container-highest) !important;
+    --track-background: var(--md-sys-surface-container-highest) !important;
     --track-background-checked: var(--ion-color-base) !important;
 
-    --border-radius: var(--mat-sys-corner-full);
+    --border-radius: var(--md-sys-corner-full);
   }
 
   ion-toggle.toggle-checked {
@@ -29,20 +29,20 @@
     box-sizing: border-box;
     min-height: 32px;
     min-width: 52px;
-    border: 2px solid var(--mat-sys-outline);
-    background: var(--mat-sys-surface-container-highest);
+    border: 2px solid var(--md-sys-outline);
+    background: var(--md-sys-surface-container-highest);
   }
 
   ion-toggle.toggle-checked::part(track) {
-    border-color: var(--ion-color-base, var(--mat-sys-primary));
-    background: var(--ion-color-base, var(--mat-sys-primary));
+    border-color: var(--ion-color-base, var(--md-sys-primary));
+    background: var(--ion-color-base, var(--md-sys-primary));
   }
 
   ion-toggle::part(handle) {
-    background: var(--mat-sys-outline);
+    background: var(--md-sys-outline);
   }
 
   ion-toggle.toggle-checked::part(handle) {
-    background: var(--ion-color-contrast, var(--mat-sys-on-primary));
+    background: var(--ion-color-contrast, var(--md-sys-on-primary));
   }
 }

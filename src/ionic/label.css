@@ -3,7 +3,7 @@
     color: inherit;
 
     &.ion-color {
-      color: var(--ion-color-base, var(--mat-sys-primary));
+      color: var(--ion-color-base, var(--md-sys-primary));
     }
   }
 }

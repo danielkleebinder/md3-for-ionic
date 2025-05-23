@@ -1,14 +1,14 @@
 /* Bottom Sheets: https://m3.material.io/components/bottom-sheets/specs */
 :root[mode=md] {
   ion-action-sheet {
-    --background: var(--mat-sys-surface-container-low) !important;
-    --color: var(--mat-sys-on-surface) !important;
+    --background: var(--md-sys-surface-container-low) !important;
+    --color: var(--md-sys-on-surface) !important;
     --max-width: 640px !important;
 
     .action-sheet-container {
       overflow: hidden;
-      border-radius: var(--mat-sys-corner-extra-large-top);
-      box-shadow: var(--mat-sys-level1);
+      border-radius: var(--md-sys-corner-extra-large-top);
+      box-shadow: var(--md-sys-level1);
     }
   }
 }

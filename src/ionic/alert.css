@@ -1,10 +1,10 @@
 :root[mode=md] {
   ion-alert {
-    --background: var(--mat-sys-surface-container-high);
+    --background: var(--md-sys-surface-container-high);
 
     .alert-wrapper {
-      box-shadow: var(--mat-sys-level3);
-      border-radius: var(--mat-sys-corner-extra-large);
+      box-shadow: var(--md-sys-level3);
+      border-radius: var(--md-sys-corner-extra-large);
     }
 
     .alert-head {
@@ -12,20 +12,20 @@
     }
 
     .alert-title {
-      font: var(--mat-sys-headline-small);
-      letter-spacing: var(--mat-sys-headline-small-letter-spacing);
+      font: var(--md-sys-headline-small);
+      letter-spacing: var(--md-sys-headline-small-letter-spacing);
     }
 
     .alert-message {
       padding: 0 24px 24px;
-      font: var(--mat-sys-body-medium);
-      letter-spacing: var(--mat-sys-body-medium-letter-spacing);
-      color: var(--mat-sys-on-surface-variant);
+      font: var(--md-sys-body-medium);
+      letter-spacing: var(--md-sys-body-medium-letter-spacing);
+      color: var(--md-sys-on-surface-variant);
     }
 
     .alert-radio-label,
     .alert-checkbox-label {
-      color: var(--mat-sys-on-surface) !important;
+      color: var(--md-sys-on-surface) !important;
     }
 
     .alert-radio-group,
@@ -39,13 +39,13 @@
   }
 
   ion-loading {
-    --background: var(--mat-sys-surface-container-high);
-    --spinner-color: var(--mat-sys-primary);
+    --background: var(--md-sys-surface-container-high);
+    --spinner-color: var(--md-sys-primary);
 
     .loading-wrapper {
-      color: var(--mat-sys-on-surface);
-      box-shadow: var(--mat-sys-level3);
-      border-radius: var(--mat-sys-corner-large);
+      color: var(--md-sys-on-surface);
+      box-shadow: var(--md-sys-level3);
+      border-radius: var(--md-sys-corner-large);
     }
   }
 }

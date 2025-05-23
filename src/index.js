@@ -9,10 +9,7 @@ import {generateTheme, generateTypescale, generateUtilities, writeStyleSheet} fr
 const optionDefinitions = [
     {name: 'output', alias: 'o', type: String, defaultValue: './src/theme'},
     {name: 'color', alias: 'c', type: String, defaultValue: '#3880ff'}, // '#fbba1f'
-    {name: 'with-ionic-overrides', type: Boolean, defaultValue: false},
-    {name: 'sys-color-prefix', type: String, defaultValue: 'mat-sys'},
-    {name: 'custom-color-prefix', type: String, defaultValue: 'mat-custom'},
-    {name: 'ref-color-prefix', type: String, defaultValue: 'mat-ref-palette'},
+    {name: 'with-ionic-overrides', type: Boolean, defaultValue: false}
 ];
 const options = commandLineArgs(optionDefinitions);
 
@@ -20,9 +17,9 @@ const outDir = options['output'];
 const colorSource = options['color'];
 const withIonicOverrides = options['with-ionic-overrides'];
 
-const sysColorPrefix = options['sys-color-prefix'];
-const customColorPrefix = options['custom-color-prefix'];
-const refColorPrefix = options['ref-color-prefix'];
+const sysColorPrefix = 'md-sys';
+const customColorPrefix = 'md-custom';
+const refColorPrefix = 'md-ref-palette';
 
 // Get the theme from a hex color
 const theme = themeFromSourceColor(

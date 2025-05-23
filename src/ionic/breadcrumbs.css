@@ -15,11 +15,11 @@
   ion-breadcrumbs > ion-breadcrumb {
     font-size: 0.8rem;
     opacity: 0.9;
-    color: var(--mat-sys-on-surface-variant);
+    color: var(--md-sys-on-surface-variant);
   }
 
   ion-breadcrumbs > ion-breadcrumb.breadcrumb-active {
     opacity: 1;
-    color: var(--mat-sys-on-surface);
+    color: var(--md-sys-on-surface);
   }
 }

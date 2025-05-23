@@ -1,6 +1,6 @@
 :root[mode=md] {
   ion-menu::part(container) {
-    border-top-right-radius: var(--mat-sys-corner-large);
-    border-bottom-right-radius: var(--mat-sys-corner-large);
+    border-top-right-radius: var(--md-sys-corner-large);
+    border-bottom-right-radius: var(--md-sys-corner-large);
   }
 }

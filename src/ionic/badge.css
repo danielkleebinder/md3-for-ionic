@@ -6,20 +6,20 @@
     min-width: 26px;
     height: 20px;
 
-    --background: var(--ion-color-base, var(--mat-sys-error));
-    --color: var(--ion-color-contrast, var(--mat-sys-on-error));
+    --background: var(--ion-color-base, var(--md-sys-error));
+    --color: var(--ion-color-contrast, var(--md-sys-on-error));
     --padding-top: 4px;
     --padding-bottom: 4px;
     --padding-start: 4px;
     --padding-end: 4px;
 
-    font: var(--mat-sys-label-small);
-    letter-spacing: var(--mat-sys-label-small-letter-spacing);
-    border-radius: var(--mat-sys-corner-full);
+    font: var(--md-sys-label-small);
+    letter-spacing: var(--md-sys-label-small-letter-spacing);
+    border-radius: var(--md-sys-corner-full);
   }
 
   ion-toolbar ion-badge[slot='end'] {
-    background: var(--mat-sys-surface-variant);
-    color: var(--mat-sys-on-surface);
+    background: var(--md-sys-surface-variant);
+    color: var(--md-sys-on-surface);
   }
 }

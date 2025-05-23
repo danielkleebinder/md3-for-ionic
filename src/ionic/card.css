@@ -3,28 +3,28 @@
   ion-card,
   ion-card.md-elevated,
   ion-card.mat-elevated {
-    --background: var(--mat-sys-surface-container-low);
-    --color: var(--mat-sys-on-surface);
-    box-shadow: var(--mat-sys-level1);
+    --background: var(--md-sys-surface-container-low);
+    --color: var(--md-sys-on-surface);
+    box-shadow: var(--md-sys-level1);
     border-radius: 12px;
   }
 
   ion-card.md-filled,
   ion-card.mat-filled {
-    --background: var(--mat-sys-surface-container-highest);
-    box-shadow: var(--mat-sys-level0);
+    --background: var(--md-sys-surface-container-highest);
+    box-shadow: var(--md-sys-level0);
   }
 
   ion-card.md-outlined,
   ion-card.mat-outlined {
-    --background: var(--mat-sys-surface);
-    box-shadow: var(--mat-sys-level0);
-    outline: 1px solid var(--mat-sys-outline);
+    --background: var(--md-sys-surface);
+    box-shadow: var(--md-sys-level0);
+    outline: 1px solid var(--md-sys-outline);
   }
 
   ion-card ion-card-title,
   ion-card ion-card-subtitle {
-    --color: var(--mat-sys-on-surface);
+    --color: var(--md-sys-on-surface);
   }
 
   ion-card img {
@@ -33,30 +33,30 @@
   }
 
   ion-card ion-card-title {
-    font-family: var(--mat-sys-headline-small-font-family-name);
-    font-style: var(--mat-sys-headline-small-font-family-style);
-    font-weight: var(--mat-sys-headline-small-font-weight);
-    font-size: var(--mat-sys-headline-small-font-size);
-    line-height: var(--mat-sys-headline-small-line-height);
-    letter-spacing: var(--mat-sys-headline-small-letter-spacing);
+    font-family: var(--md-sys-headline-small-font-family-name);
+    font-style: var(--md-sys-headline-small-font-family-style);
+    font-weight: var(--md-sys-headline-small-font-weight);
+    font-size: var(--md-sys-headline-small-font-size);
+    line-height: var(--md-sys-headline-small-line-height);
+    letter-spacing: var(--md-sys-headline-small-letter-spacing);
   }
 
   ion-card ion-card-subtitle {
     margin-top: 0;
-    font-family: var(--mat-sys-label-large-font-family-name);
-    font-style: var(--mat-sys-label-large-font-family-style);
-    font-weight: var(--mat-sys-label-large-font-weight);
-    font-size: var(--mat-sys-label-large-font-size);
-    line-height: var(--mat-sys-label-large-line-height);
-    letter-spacing: var(--mat-sys-label-large-letter-spacing);
+    font-family: var(--md-sys-label-large-font-family-name);
+    font-style: var(--md-sys-label-large-font-family-style);
+    font-weight: var(--md-sys-label-large-font-weight);
+    font-size: var(--md-sys-label-large-font-size);
+    line-height: var(--md-sys-label-large-line-height);
+    letter-spacing: var(--md-sys-label-large-letter-spacing);
   }
 
   ion-card-content {
-    font-family: var(--mat-sys-body-medium-font-family-name);
-    font-style: var(--mat-sys-body-medium-font-family-style);
-    font-weight: var(--mat-sys-body-medium-font-weight);
-    font-size: var(--mat-sys-body-medium-font-size);
-    line-height: var(--mat-sys-body-medium-line-height);
-    letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+    font-family: var(--md-sys-body-medium-font-family-name);
+    font-style: var(--md-sys-body-medium-font-family-style);
+    font-weight: var(--md-sys-body-medium-font-weight);
+    font-size: var(--md-sys-body-medium-font-size);
+    line-height: var(--md-sys-body-medium-line-height);
+    letter-spacing: var(--md-sys-body-medium-letter-spacing);
   }
 }

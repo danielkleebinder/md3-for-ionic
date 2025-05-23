@@ -1,9 +1,9 @@
 :root[mode=md] {
   ion-accordion-group {
-    border-radius: var(--mat-sys-corner-medium);
-    border: 1px solid var(--mat-sys-outline-variant);
-    background: var(--mat-sys-surface);
-    color: var(--mat-sys-on-surface);
+    border-radius: var(--md-sys-corner-medium);
+    border: 1px solid var(--md-sys-outline-variant);
+    background: var(--md-sys-surface);
+    color: var(--md-sys-on-surface);
     overflow: hidden;
     margin: 16px;
   }
