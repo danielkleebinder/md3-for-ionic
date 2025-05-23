@@ -12,6 +12,6 @@
   }
 
   .ion-modal-shadow {
-    --box-shadow: var(--mat-sys-elevation-3);
+    --box-shadow: var(--mat-sys-level3);
   }
 }

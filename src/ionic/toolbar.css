@@ -1,0 +1,82 @@
+/* Top app bar: https://m3.material.io/components/top-app-bar/specs */
+:root[mode=md] {
+  ion-toolbar {
+    --background: var(--mat-sys-surface-container);
+    --color: var(--mat-sys-on-surface);
+
+    --min-height: 64px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+
+  ion-toolbar,
+  ion-toolbar ion-title {
+    font: var(--mat-sys-title-large);
+    letter-spacing: var(--mat-sys-title-large-letter-spacing);
+
+    h1 {
+      font: var(--mat-sys-display-medium);
+      letter-spacing: var(--mat-sys-display-medium-letter-spacing);
+      margin: unset;
+    }
+
+    h2 {
+      font: var(--mat-sys-title-large);
+      letter-spacing: var(--mat-sys-title-large-letter-spacing);
+      margin: unset;
+    }
+
+    h3 {
+      font: var(--mat-sys-body-large);
+      letter-spacing: var(--mat-sys-body-large-letter-spacing);
+      margin: unset;
+    }
+
+    p {
+      color: var(--mat-sys-on-surface-variant);
+      font: var(--mat-sys-body-medium);
+      letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+      margin: unset;
+    }
+
+    small {
+      color: var(--mat-sys-on-surface-variant);
+      font: var(--mat-sys-body-small);
+      letter-spacing: var(--mat-sys-body-small-letter-spacing);
+      margin: unset;
+    }
+  }
+
+  ion-toolbar ion-title:has(:is(h1, h2, h3, p, small)) {
+    line-height: 0;
+  }
+
+  ion-toolbar *[slot=start] {
+    color: var(--mat-sys-on-surface);
+  }
+
+  ion-toolbar *[slot=end] {
+    color: var(--mat-sys-on-surface-variant);
+  }
+
+  ion-header, ion-footer {
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  ion-header.scrolled {
+    box-shadow: var(--mat-sys-level2);
+  }
+
+  ion-header.scrolled ion-toolbar {
+    --background: var(--mat-sys-surface-container);
+  }
+
+  ion-content ion-header ion-toolbar {
+    --background: transparent;
+  }
+}

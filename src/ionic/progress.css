@@ -30,7 +30,7 @@
     background: var(--mat-sys-secondary);
     border-color: var(--mat-sys-secondary);
     color: var(--mat-sys-on-secondary);
-    box-shadow: var(--mat-sys-elevation-2);
+    box-shadow: var(--mat-sys-level2);
   }
 
   ion-refresher.refresher-native .arrow-container ion-icon {

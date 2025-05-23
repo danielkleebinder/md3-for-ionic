@@ -5,9 +5,13 @@
     --color: var(--mat-sys-inverse-on-surface);
     --button-color: var(--mat-sys-inverse-on-surface);
     --border-radius: var(--mat-sys-corner-extra-small);
-    --box-shadow: var(--mat-sys-elevation-3);
+    --box-shadow: var(--mat-sys-level3);
 
     font: var(--mat-sys-body-large);
     letter-spacing: var(--mat-sys-body-medium-letter-spacing);
+
+    &::part(button) {
+      text-transform: unset;
+    }
   }
 }

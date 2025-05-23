@@ -91,6 +91,8 @@
 
   ion-button.button-large {
     height: 96px;
+    font: var(--mat-sys-title-large);
+    letter-spacing: var(--mat-sys-title-large-letter-spacing);
 
     --border-width: 2px;
     --border-radius: 48px;
