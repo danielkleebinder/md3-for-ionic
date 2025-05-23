@@ -1,0 +1,57 @@
+/* Sliders and ranges: https://m3.material.io/components/sliders/specs */
+:root[mode=md] {
+  ion-range {
+    --bar-background: var(--md-sys-secondary-container);
+    --bar-background-active: var(--ion-color-base, var(--md-sys-primary));
+    --bar-border-radius: var(--md-sys-corner-full);
+    --bar-height: 16px;
+
+    --height: 80px;
+
+    --knob-background: transparent;
+    --knob-border-radius: var(--md-sys-corner-full);
+    --knob-box-shadow: none;
+    --knob-size: 44px;
+
+    --pin-background: var(--md-sys-inverse-surface);
+    --pin-color: var(--md-sys-inverse-on-surface);
+
+    &::part(knob) {
+      --ion-color-base: transparent;
+      --ion-color-contrast: transparent;
+      width: 4px;
+      height: var(--knob-size);
+      background: var(--bar-background-active);
+      transform: translateX(calc(var(--knob-size) / 2 - 2px));
+    }
+
+    &::part(tick),
+    &::part(tick-active) {
+      --bar-height: 4px;
+      border-radius: var(--md-sys-corner-full);
+    }
+
+    &::part(bar-active) {
+      border-top-right-radius: calc(var(--knob-border-radius) / 2);
+      border-bottom-right-radius: calc(var(--knob-border-radius) / 2);
+      margin-right: 6px;
+    }
+
+    &[dual-knobs]::part(bar-active) {
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+
+    &::part(pin) {
+      --ion-color-base: transparent;
+      --ion-color-contrast: transparent;
+      background: var(--pin-background);
+      color: var(--pin-color);
+      border-radius: var(--md-sys-corner-full);
+      padding: 16px;
+      min-width: 36px;
+      top: 10px;
+    }
+  }
+}
+
